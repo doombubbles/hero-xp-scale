@@ -131,7 +131,7 @@ public class HeroXpScaleSettings : ModContent
                 min = HeroXpScaleMod.BalancedMode ? HeroXpScaleMod.DefaultMin : HeroXpScaleMod.StepSize,
                 max = HeroXpScaleMod.BalancedMode ? HeroXpScaleMod.DefaultMax : HeroXpScaleMod.DefaultMin * 2,
                 stepSize = HeroXpScaleMod.StepSize,
-                icon = tower.icon.GUID
+                icon = tower.icon.AssetGUID
             };
             if (HeroXpScaleMod.LoadedXpScales.TryGetValue(hero.towerId + "XpScale", out var xpScale))
             {
